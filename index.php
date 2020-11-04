@@ -54,7 +54,7 @@
                     <h3>Novo por aqui ?</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, obcaecati, neque nesciunt autem 
                         minus necessitatibus repudiandae cum a saepe consequatur assumenda soluta animi veniam, porro unde. 
-                        Veniam perferendis repudiandae quas.</p>
+                        Veniam perferendis repudiandae quas. mayk brito</p>
                         <button class=" btn transparent" id="sign-up-btn">Cadastre-se</button>
                 </div>
                 <img src="img/doutora.svg" alt="foguete" class="image">
