@@ -6,8 +6,9 @@
     <title>Home || DIVÃ</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" 
-    integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
-     crossorigin="anonymous"></script>
+        integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
+        crossorigin="anonymous">
+    </script>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
                     <h2 class="title">Entrar</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Usuário / E-mail">
+                        <input type="text" placeholder="E-mail">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
@@ -56,12 +57,12 @@
                         Para que você consiga usar a plataforma é necessário criar uma conta.</p>
                         <button class=" btn transparent" id="sign-up-btn">Cadastre-se</button>
                 </div>
-                <img src="img/doutora.svg" alt="foguete" class="image">
+                <img src="img/doutores.svg" alt="foguete" class="image">
             </div>
             <div class="panel right-panel">
                 <div class="content">
                     <h3>Entre na sua conta</h3>
-                    <p>Se já tem uma conta cadastrada é so entrar e usar a plataforma.</p>
+                    <p>Se já tem uma conta cadastrada é só se conectar e usar a plataforma.</p>
                         <button class="btn transparent" id="sign-in-btn">Conecte-se</button>
                 </div>
                 <img src="img/msg.svg" alt="doutora" class="image">
