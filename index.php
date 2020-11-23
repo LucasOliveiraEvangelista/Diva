@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home || DIVÃ</title>
+    <title>Login1 || DIVÃ</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" 
         integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
@@ -20,28 +20,28 @@
                     <h2 class="title">Entrar</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="E-mail" name="emailL">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="Password" placeholder="Senha">
+                        <input type="Password" placeholder="Senha" name="senhaL">
                     </div>
-                    <input type="submit" value="Entrar" class="btn solid">
+                    <input type="submit" value="Entrar" class="btn solid" name="entrar">
                 </form>
 
                 <form action="cadastro.php" method="POST" class="signup-form">
                     <h2 class="title">Cadastrar</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Usuário">
+                        <input type="text" placeholder="Usuário" name="nome">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="text" placeholder="E-mail">
+                        <input type="text" placeholder="E-mail" name="email">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="Password" placeholder="Senha">
+                        <input type="Password" placeholder="Senha" name="senha">
                     </div>
                     <input type="submit" value="Cadastrar" class="btn solid">
                 </form>
