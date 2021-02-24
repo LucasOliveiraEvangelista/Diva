@@ -21,7 +21,7 @@ body  ,input{
     width: 2000px;
     height: 2000px;
     border-radius: 50%;
-    background: linear-gradient(-45deg, #ff8d93, #fa424b);
+    background: linear-gradient(-45deg, #f196ee, #6824dd);
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
@@ -109,7 +109,7 @@ form.signup-form{
     outline: none;
     border-radius: 50px;
     cursor: pointer;
-    background-color: #fa424b;
+    background-color: #9542fa;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
@@ -117,7 +117,7 @@ form.signup-form{
     transition: .5s;
 }
 .btn:hover{
-    background-color: #ff8087;
+    background-color: #ef54fd;
 }
 .panels-container{
     position: absolute;

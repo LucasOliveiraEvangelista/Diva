@@ -12,22 +12,22 @@
 </head>
 <body>
     <?php
-    
     require_once "conexao.php";
 
-    $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $senha = $_POST["senha"];
+   session_start();
+    $_SESSION['nome'] = $_POST['nome'];
+    $_SESSION['email'] = $_POST["email"];
+    $_SESSION['senha'] = $_POST["senha"];
 
-    $senha = sha1($senha);
+    $senha = sha1($_SESSION['senha']);
 
     $checagem = "SELECT email FROM fast_paci where email ='$email'";
     $listacheck = mysqli_query($conexao, $checagem);
-    // $dados = mysqli_fetch_array($listacheck);
+    //$dados = mysqli_fetch_array($listacheck);
     $achou = mysqli_num_rows($listacheck);
 
     
-    if(strlen($nome) > 80 ){
+    if(strlen($_SESSION['nome']) > 80 ){
         echo "
         <script>
             alert('Preencha com seu nome abreviado');
@@ -35,7 +35,7 @@
         </script>
         ";
 
-    }else if($nome == ""){
+    }else if($_SESSION['nome'] == ""){
         echo "
         <script>
             alert('Por favor, preencha com seu nome');

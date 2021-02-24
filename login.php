@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -10,32 +10,30 @@
         crossorigin="anonymous">
     </script>
 </head>
-<body> -->
+<body>
 
     <?php
-    session_start();
-    
+ 
     require_once 'conexao.php';
+
+    session_start();
 
     if(empty($_POST['emailL']) || empty($_POST['senhaL'])) {
         header('Location: index.php');
         exit();
     }
-
-
+    
         $email = $_POST["emailL"];
         $senha = $_POST["senhaL"];
         $senha = sha1($senha);
 
         $query = "SELECT nome, email, senha FROM fast_paci WHERE email = '$email' AND senha = '$senha'";
-
         $check = mysqli_query($conexao, $query);
         $achou = mysqli_num_rows($check);
 
         if ($achou == 1){
             $dados = mysqli_fetch_array($check);
 
-         
             $_SESSION["nome"] = $dados["nome"];
             $_SESSION["emailL"] = $dados["email"];
             $_SESSION["senhaL"] = $dados["senha"];
@@ -50,6 +48,6 @@
         }
     
     ?>
-<!-- 
+
 </body>
-</html> -->
+</html>
